@@ -1,28 +1,28 @@
 {
     "name": "NiuTrans",
-    "guid": "asc.{FFE1F462-1EA2-4391-990D-4CC84940B754}",
+    "guid": "asc.{67fe1c85-ba0b-4759-9825-9f762391ff43}",
     "version": "1.0.0",
 
     "variations": [
         {
             "description": "使用小牛翻译将所选文本翻译成其他语言。",
             "url": "index.html",
-            "icons": ["resources/小牛.png", "小牛@2x.png"],
+            "icons": ["resources/xniu.png", "xniu@2x.png"],
             "icons2": [
                 {
                     "theme" : "flat",
 
-                    "100%": { "normal": "小牛.png" },
-                    "200%": { "normal": "小牛@2x.png" },
-                    "default": { "normal": "小牛.png" }
+                    "100%": { "normal": "xniu.png" },
+                    "200%": { "normal": "xniu@2x.png" },
+                    "default": { "normal": "xniu.png" }
                 }
             ],
-            "isViewer": true,
+            "isViewer": true,  //仅预览模式时，插件是否要启用，默认时为false
             "EditorsSupport": [ "word", "cell", "slide", "pdf" ],
             
-            "isVisual": false,  # 
-            "isModal": true,
-            "isInsideMode": false,
+            "isVisual": true,  //插件是否有UI视图
+            "isModal": false,  //插件是否以弹框形式打开
+            "isInsideMode": true,  
 
 
             "initDataType": "text",
@@ -40,28 +40,7 @@
                     "dark" : "resources/store/icons"
                 },
                 "screenshots": ["resources/store/screenshots/"]
-            },
-            @REM "buttons": [
-            @REM     { 
-            @REM         "text": "Cancel",
-            @REM         "primary": false,
-            @REM         "isviewer": false,
-            @REM         "textLocale": {
-            @REM             "fr": "Annuler",
-            @REM             "es": "Cancelar"
-            @REM         }
-            @REM     }
-            @REM ],
-            @REM "cryptoDisabledForExternalCloud": "true",
-            @REM "cryptoDisabledForInternalCloud": "true",
-            @REM "cryptoDisabledOnStart": "true",
-            @REM "cryptoMode": "1",
-            @REM "events": ["onClick"],
-            
-            @REM "initData": "",
-            @REM "isCustomWindow": true,
-            @REM "isDisplayedInViewer": true,
-            @REM "isSystem": false
+            }
         }
     ]
 }
